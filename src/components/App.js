@@ -76,6 +76,12 @@ class App extends Component {
             activePage={this.state.activePage}
           />
         )}
+        {this.state.showMovie && (
+          <ShowMovie
+            movieInfo={this.state.movie}
+            handleFloatButton={this.handleFloatButton}
+          />
+        )}
         
         <Footer />
       </div>

@@ -36,9 +36,7 @@ const MovieList = ({handleShowMovie, movies, handleSearch, activePage, searchTer
                 onChange={handlePageChange}
               />
             </div>
-            <AnchorLink href="#pageTop" className="btn-float">
-              <i className="fa fa-chevron-up" />
-            </AnchorLink>
+            
           </div>
         ) : (
           <div className="container">

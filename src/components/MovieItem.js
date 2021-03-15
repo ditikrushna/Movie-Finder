@@ -1,7 +1,7 @@
 import React from 'react';
 import Fade from "react-reveal/Fade";
 
-function MovieItem({title, year,  poster}) {
+function MovieItem({title, year,showMovie,  poster}) {
   const addDefault = (e) => {
     //no photo available default 
     e.target.src = 'https://upload.wikimedia.org/wikipedia/commons/f/fc/No_picture_available.png';
@@ -20,7 +20,7 @@ function MovieItem({title, year,  poster}) {
         <div className="card-body">
           <h4>{title}</h4>
           <p>Released in the year {year}</p>
-          <button onClick="#">View Details</button>
+          <button onClick={showMovie}>View Details</button>
         </div>
       </div>
     </Fade>
