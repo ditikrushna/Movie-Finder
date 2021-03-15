@@ -6,7 +6,7 @@ import MovieInput from './MovieInput';
 import MovieList from './MovieList';
 import ShowMovie from './ShowMovie';
 import Footer from './Footer';
-
+import DarkModeToggle from './DarkModeToggle';
 
 class App extends Component {
   constructor(props) {

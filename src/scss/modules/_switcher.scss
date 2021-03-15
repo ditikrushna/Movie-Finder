@@ -1,0 +1,39 @@
+$background-color-dark: #292A32;
+$background-color-light: #FBFAF8;
+$complimentary-color-dark: #393B43;
+$complimentary-color-light: #FEFFFF;
+
+
+$button-background-color-dark:#FBFAF8;
+$button-background-color-light:$main;
+
+$button-color-dark:$main;
+$button-color-light:white;
+
+
+
+button.dark-mode{
+  background-color:$button-background-color-dark;
+  color:$button-color-dark;
+}
+
+button{
+  background-color:$button-background-color-light;
+  color:$button-color-light;
+}
+
+
+
+.dark-mode{
+  background-color:$background-color-dark;
+  color:gray;
+  
+}
+
+.dark-mode .pagination a{
+  color:white;
+}
+
+.dark-mode .change_mode_button {
+  color:black;
+}
