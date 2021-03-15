@@ -1,11 +1,18 @@
-import React from 'react';
+import React,{useState} from 'react';
 import Fade from "react-reveal/Fade";
+import MovieList from "./MovieList";
+import MovieItem from "./MovieItem";
 
-const ShowMovie = ({ movieInfo}) => {
+const ShowMovie = ({ movieInfo, handleShowMovie, movies, handleSearch, activePage, searchTerm }) => {
+  console.log({movies})
   const addDefault = (e) => {
     e.target.src =
       "https://upload.wikimedia.org/wikipedia/commons/f/fc/No_picture_available.png";
   }
+
+  const [showComponent , setShowComponent] = useState(false);
+  
+  
 
   let {
     Title, 
@@ -16,12 +23,18 @@ const ShowMovie = ({ movieInfo}) => {
     Poster, 
     Director,
     Writer,
-    Actors,
     Plot,
     imdbRating,
     BoxOffice,
     Production
   } = movieInfo;
+  
+  const showPreviousMoviesData = ()=>{
+    console.log(movieInfo)
+  }
+
+
+
   return (
          <Fade>
          <div className="jumbotron">
@@ -47,17 +60,19 @@ const ShowMovie = ({ movieInfo}) => {
             </div>
             
           </div>
-          <button  className="view-similar-button">View Similar Movies</button>
-          
+         
+
+          <button  className="view-similar-button" onClick={() => setShowComponent(true)}>
+            View Similar Movies</button>
+            {showComponent?<MovieList
+            movies={movies}
+            handleShowMovie={handleShowMovie}
+            handleSearch={handleSearch}
+            searchTerm={searchTerm}
+            activePage={activePage}
+          /> :null}
         </div> 
-
-       
         </Fade>
-
-
-    
-
-    
   );
 }
 

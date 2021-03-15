@@ -30,6 +30,7 @@ class App extends Component {
     searchMovies(searchTerm, pageNumber).then(data => { 
       let movies = [];
       movies = [data];
+      //console.log(movies)
       this.setState(
         { 
           movies, 
@@ -43,6 +44,8 @@ class App extends Component {
     .catch(error => 
       console.log(error)
     )  
+
+    
   }
   
   handleShowMovie(title, year){
@@ -51,6 +54,7 @@ class App extends Component {
       movie = {...data};
       this.setState({ movie, showMovie: true, showMovies: false });
     })
+
   }
 
   handleFloatButton() {
@@ -76,10 +80,15 @@ class App extends Component {
             activePage={this.state.activePage}
           />
         )}
+        
         {this.state.showMovie && (
           <ShowMovie
             movieInfo={this.state.movie}
-            handleFloatButton={this.handleFloatButton}
+            movies={this.state.movies}
+            handleShowMovie={this.handleShowMovie}
+            handleSearch={this.handleSearch}
+            searchTerm={this.state.searchTerm}
+            activePage={this.state.activePage}
           />
         )}
         
