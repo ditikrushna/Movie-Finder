@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/sova-final/static/css/main.a567c77f.chunk.css",
-    "main.js": "/sova-final/static/js/main.04cd526a.chunk.js",
-    "main.js.map": "/sova-final/static/js/main.04cd526a.chunk.js.map",
+    "main.css": "/sova-final/static/css/main.0acfbd0b.chunk.css",
+    "main.js": "/sova-final/static/js/main.9cc04bbc.chunk.js",
+    "main.js.map": "/sova-final/static/js/main.9cc04bbc.chunk.js.map",
     "runtime-main.js": "/sova-final/static/js/runtime-main.d648769f.js",
     "runtime-main.js.map": "/sova-final/static/js/runtime-main.d648769f.js.map",
     "static/js/2.409f9150.chunk.js": "/sova-final/static/js/2.409f9150.chunk.js",
     "static/js/2.409f9150.chunk.js.map": "/sova-final/static/js/2.409f9150.chunk.js.map",
     "index.html": "/sova-final/index.html",
-    "static/css/main.a567c77f.chunk.css.map": "/sova-final/static/css/main.a567c77f.chunk.css.map",
+    "static/css/main.0acfbd0b.chunk.css.map": "/sova-final/static/css/main.0acfbd0b.chunk.css.map",
     "static/js/2.409f9150.chunk.js.LICENSE.txt": "/sova-final/static/js/2.409f9150.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.d648769f.js",
     "static/js/2.409f9150.chunk.js",
-    "static/css/main.a567c77f.chunk.css",
-    "static/js/main.04cd526a.chunk.js"
+    "static/css/main.0acfbd0b.chunk.css",
+    "static/js/main.9cc04bbc.chunk.js"
   ]
 }
