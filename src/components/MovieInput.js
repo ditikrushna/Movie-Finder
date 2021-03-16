@@ -5,22 +5,39 @@ class MovieInput extends Component {
     super(props);
 
     this.state = {
-      input: ""
+      input: "",
+      result:[],
+      isSearching:false
     };
     
     this.handleChange = this.handleChange.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
   }
 
+ 
+
   handleChange(e) {
+
+
     this.setState({ input: e.target.value });
+    
+    
+
+
+    this.setState({isSearching:true});
   }
+
 
   onSubmit(e) {
     e.preventDefault();
     this.props.handleSearch(this.state.input);
     this.setState({ input: "" });
+    console.log(this.props.moviesList);
+
   }
+  
+  
+
 
   render() {
     return (
@@ -31,11 +48,12 @@ class MovieInput extends Component {
                 <input
                   type="text"
                   value={this.state.input}
-                  placeholder="Enter Movie Name "
+                  placeholder="Type something to see search result..."
                   onChange={this.handleChange}
                   className="search"
                   required
                 />
+
               <button type="submit" className="iconbox">
                 <span className="iconbox__icon">
                   <i className="fa fa-search" />
@@ -50,3 +68,4 @@ class MovieInput extends Component {
 }
 
 export default MovieInput;
+

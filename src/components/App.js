@@ -65,7 +65,7 @@ class App extends Component {
     return (
       <div className="main-container">
         <Navbar />
-        <MovieInput handleSearch={this.handleSearch} />
+        <MovieInput handleSearch={this.handleSearch}  />
         {this.state.showPlaceholder && (
           <div className="container">
             <h1 className="flex placeholder">Type something to see search result...</h1>
@@ -83,6 +83,7 @@ class App extends Component {
         
         {this.state.showMovie && (
           <ShowMovie
+            moviesList={this.state.movies}
             movieInfo={this.state.movie}
             movies={this.state.movies}
             handleShowMovie={this.handleShowMovie}

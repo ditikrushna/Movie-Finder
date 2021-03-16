@@ -76,7 +76,7 @@ $medium: 900px;
           font-size: .5rem;
           box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16),
           0 2px 10px 0 rgba(0, 0, 0, .12);
-          margin-left:35% ;
+          margin-left:30% ;
           margin-top: .5rem;
           border: 0;
           background-color: $main;
@@ -90,5 +90,26 @@ $medium: 900px;
         }
   }
 
+  
+  @media screen and (max-width: 1024px) {
+    .view-similar-button{
+          position:absolute;
+          padding: 1rem 2rem;
+          font-size: .5rem;
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16),
+          0 2px 10px 0 rgba(0, 0, 0, .12);
+          margin-left:23% ;
+          margin-top: .5rem;
+          border: 0;
+          background-color: $main;
+          color: #fff;
+          border-radius: 10em;
+          cursor: pointer;
+          text-transform: uppercase;
+          white-space: normal;
+          word-wrap: break-word;
+          outline: none;
+        }
+  }
 
 

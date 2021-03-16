@@ -3,8 +3,7 @@ import Fade from "react-reveal/Fade";
 import MovieList from "./MovieList";
 import MovieItem from "./MovieItem";
 
-const ShowMovie = ({ movieInfo, handleShowMovie, movies, handleSearch, activePage, searchTerm }) => {
-  console.log({movies})
+const ShowMovie = ({ movieInfo, handleShowMovie, movies, handleSearch, activePage, searchTerm, moviesList }) => {
   const addDefault = (e) => {
     e.target.src =
       "https://upload.wikimedia.org/wikipedia/commons/f/fc/No_picture_available.png";
@@ -30,10 +29,9 @@ const ShowMovie = ({ movieInfo, handleShowMovie, movies, handleSearch, activePag
   } = movieInfo;
   
   const showPreviousMoviesData = ()=>{
-    console.log(movieInfo)
+    
+    
   }
-
-
 
   return (
          <Fade>
@@ -61,7 +59,6 @@ const ShowMovie = ({ movieInfo, handleShowMovie, movies, handleSearch, activePag
             
           </div>
          
-
           <button  className="view-similar-button" onClick={() => setShowComponent(true)}>
             View Similar Movies</button>
             {showComponent?<MovieList
